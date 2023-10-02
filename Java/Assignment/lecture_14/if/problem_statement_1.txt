@@ -1,0 +1,3 @@
+Q1. Given Integer as age input
+    Print Eligible to vote if the person is eligible to vote
+

@@ -1,0 +1,5 @@
+Given an integer value as input
+-Print fizz if divisible bby 3
+-print buzz if divisible by 5
+-Print fizzbuzz if divisible by both
+-If not print "not divisible by both"

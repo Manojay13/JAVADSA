@@ -1,0 +1,81 @@
+    
+    https://github.com/openjdk/jdk8/blob/master/jdk/src/share/classes/java/util/concurrent/PriorityBlockingQueue.java
+    
+   
+   Resizing:-
+    private static final int DEFAULT_INITIAL_CAPACITY = 11;
+        /**
+     * Creates a {@code PriorityBlockingQueue} with the default
+     * initial capacity (11) that orders its elements according to
+     * their {@linkplain Comparable natural ordering}.
+     */
+    public PriorityBlockingQueue() {
+        this(DEFAULT_INITIAL_CAPACITY, null);
+        
+    }    
+      /**
+     * Creates a {@code PriorityBlockingQueue} with the specified
+     * initial capacity that orders its elements according to their
+     * {@linkplain Comparable natural ordering}.
+     *
+     * @param initialCapacity the initial capacity for this priority queue
+     * @throws IllegalArgumentException if {@code initialCapacity} is less
+     *         than 1
+     */
+    public PriorityBlockingQueue(int initialCapacity) {
+        this(initialCapacity, null);
+    }
+
+Uses Heap:-
+/**
+     * Priority queue represented as a balanced binary heap: the two
+     * children of queue[n] are queue[2*n+1] and queue[2*(n+1)].  The
+     * priority queue is ordered by comparator, or by the elements'
+     * natural ordering, if comparator is null: For each node n in the
+     * heap and each descendant d of n, n <= d.  The element with the
+     * lowest value is in queue[0], assuming the queue is nonempty.
+     */
+     
+     Code:
+     class Demo{
+	public static void main(String[] args) throws InterruptedException{
+		java.util.concurrent.BlockingQueue bq = new java.util.concurrent.PriorityBlockingQueue(11,java.util.Comparator.reverseOrder());
+		bq.offer(10);
+		bq.offer(20);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+		bq.put(30);
+
+		System.out.println(bq);
+
+		bq.offer(40,5,java.util.concurrent.TimeUnit.SECONDS);//no need to stop
+		System.out.println(bq);
+
+		//take() -->Deletes element  throws InterruptedException
+		bq.take();
+		System.out.println(bq);
+
+		//drainTo() -->moves delete data from one to other data structure  making first one empty
+		java.util.ArrayList al = new java.util.ArrayList();
+		System.out.println(al);
+		bq.drainTo(al);
+		System.out.println(al);
+		System.out.println(bq);
+
+	}
+}
+o/p:
+[30, 30, 30, 30, 30, 30, 30, 10, 30, 30, 30, 20]
+[40, 30, 30, 30, 30, 30, 30, 10, 30, 30, 30, 20, 30]
+[30, 30, 30, 30, 30, 30, 30, 10, 30, 30, 30, 20]
+[]
+[30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 20, 10]
+[]
+

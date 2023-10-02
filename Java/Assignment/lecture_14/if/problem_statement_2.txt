@@ -1,0 +1,7 @@
+Take two integers A and B as input 
+Print max of two
+Assume x and y are not equal
+Input:
+x = 5  y = 7
+Output:
+7 is greater 

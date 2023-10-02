@@ -1,0 +1,64 @@
+Compiled from "RelationalDemo.java"
+class RelationalDemo {
+  RelationalDemo();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: bipush        10
+       2: istore_1
+       3: bipush        20
+       5: istore_2
+       6: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       9: iload_1
+      10: iload_2
+      11: if_icmpge     18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+      22: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      25: iload_1
+      26: iload_2
+      27: if_icmple     34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+      38: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      41: iload_1
+      42: iload_2
+      43: if_icmpgt     50
+      46: iconst_1
+      47: goto          51
+      50: iconst_0
+      51: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+      54: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      57: iload_1
+      58: iload_2
+      59: if_icmplt     66
+      62: iconst_1
+      63: goto          67
+      66: iconst_0
+      67: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+      70: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      73: iload_1
+      74: iload_2
+      75: if_icmpne     82
+      78: iconst_1
+      79: goto          83
+      82: iconst_0
+      83: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+      86: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      89: iload_1
+      90: iload_2
+      91: if_icmpeq     98
+      94: iconst_1
+      95: goto          99
+      98: iconst_0
+      99: invokevirtual #3                  // Method java/io/PrintStream.println:(Z)V
+     102: return
+}

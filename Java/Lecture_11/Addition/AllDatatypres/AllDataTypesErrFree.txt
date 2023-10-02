@@ -1,0 +1,28 @@
+Compiled from "AllDataTypesErrFree.java"
+class AllDataTypesErrFree {
+  int x;
+
+  AllDataTypesErrFree();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: bipush        20
+       7: putfield      #2                  // Field x:I
+      10: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: bipush        10
+       2: istore_1
+       3: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       6: new           #4                  // class AllDataTypesErrFree
+       9: dup
+      10: invokespecial #5                  // Method "<init>":()V
+      13: getfield      #2                  // Field x:I
+      16: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+      19: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      22: iload_1
+      23: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+      26: return
+}

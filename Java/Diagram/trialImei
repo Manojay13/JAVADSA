@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2023-09-01T05:39:15.645Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="7BKntAAvKNQ6voA1WaXd" version="21.7.1" type="device">
+  <diagram name="Page-1" id="E14nEgMTH-Yh2D8bcdD1">
+    <mxGraphModel dx="993" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RYA60eHMmcFyHPlN6A_t-3" target="RYA60eHMmcFyHPlN6A_t-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-3" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Only NPI approved make model color wil shown in drodown to add&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="50" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RYA60eHMmcFyHPlN6A_t-6" target="RYA60eHMmcFyHPlN6A_t-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RYA60eHMmcFyHPlN6A_t-6" target="RYA60eHMmcFyHPlN6A_t-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-6" value="Check if imei is present for given orgID" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="260" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RYA60eHMmcFyHPlN6A_t-9" target="RYA60eHMmcFyHPlN6A_t-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-9" value="Add in trial IMEi" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-11" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RYA60eHMmcFyHPlN6A_t-12" target="RYA60eHMmcFyHPlN6A_t-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-12" value="for given profileId new Sku is mapped in org_sku mapping table" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-14" value="Success" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="825" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RYA60eHMmcFyHPlN6A_t-16" value="Error message Showing duplicate IMEI" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="305" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,5 @@
+Take integer N as input
+Print multiples of 4 to N
+
+Input :22
+Output : 4 8 12 16 20

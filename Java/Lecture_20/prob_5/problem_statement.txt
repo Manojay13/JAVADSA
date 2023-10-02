@@ -1,0 +1,9 @@
+take input number from user 
+print those numbers which are not divisible by 3 and 5 or 4
+
+Inout : 5
+Output:
+1
+2
+3
+5

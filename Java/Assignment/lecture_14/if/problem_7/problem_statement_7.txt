@@ -1,0 +1,11 @@
+Given an Integer input A represents units of electricity consumed at your house
+Calculate and print the bill amount
+
+units<=100 : price per unit is 1
+units>100  : price per unit is 2
+e.g. 
+	Input:50
+	Output: 50
+	Input:200
+	Output: 300
+     

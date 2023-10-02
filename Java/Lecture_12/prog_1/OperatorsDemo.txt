@@ -1,0 +1,41 @@
+Compiled from "OpeatorsDemo.java"
+class OperatorsDemo {
+  OperatorsDemo();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: bipush        10
+       2: istore_1
+       3: bipush        20
+       5: istore_2
+       6: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       9: iload_1
+      10: iload_2
+      11: iadd
+      12: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      15: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      18: iload_1
+      19: iload_2
+      20: isub
+      21: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      24: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      27: iload_1
+      28: iload_2
+      29: imul
+      30: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      33: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      36: iload_1
+      37: iload_2
+      38: idiv
+      39: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      42: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      45: iload_1
+      46: iload_2
+      47: irem
+      48: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      51: return
+}
